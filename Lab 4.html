@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three Filtered Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .image-container {
+      position: relative;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* First Image */
+    .invert {
+      filter: invert(1);
+    }
+
+    .caption-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 18px;
+      border: 2px solid white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Second Image */
+    .blur {
+      filter: blur(4px);
+    }
+
+    .caption-middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.7);
+      color: #333;
+      font-size: 20px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .caption-middle a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #007BFF;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Third Image */
+    .gradient {
+      filter: brightness(0.8);
+      background: linear-gradient(to right, rgba(255,0,0,0.3), rgba(0,0,255,0.3));
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    .para1 {
+      width: 80%;
+      margin: 20px auto;
+      background: #fff;
+      padding: 15px;
+    }
+
+    .para2 {
+      width: 60%;
+      margin-left: 5%;
+      background: #eee;
+      padding: 15px;
+    }
+
+    .para3 {
+      width: 40%;
+      margin-left: 50%;
+      background: #ddd;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Image -->
+  <div class="image-container">
+    <img src="blue exorcist.jpg" class="invert" alt="Inverted Image">
+    <div class="caption-bottom"><strong>Blue Exorcist</strong><br> Get ready to enjoy to a wild adventure where 2 half demon twin brother train at school to defeat evil demons</div>
+  </div>
+
+  <!-- Second Image -->
+  <div class="image-container">
+    <img src="fire force.jpg" class="blur" alt="Blurred Image">
+    <div class="caption-middle">
+      Fire Force - An action anime to watch. Please get ready to enjoy an action packed anime about fire demons, friendship and teamwork.<br>
+      <a href="#https://youtu.be/MkzFKJjNnvM?si=FIN14a0HuScgbhAW">Click Here to watch the traller</a>
+    </div>
+  </div>
+
+  <!-- Third Image -->
+  <div class="title">Gradient Image and Paragraphs</div>
+  <div class="image-container">
+    <img src="solo leveling.jpg" class="gradient" alt="Gradient Image">
+  </div>
+  <div class="para1">Action Packed.</div>
+  <div class="para2"> <strong>ARISE!</strong></div>
+  <div class="para3">This anime show new season just came out this spring. People are sating this the best seaon yet . A must watch.... You dont want to miss it.</div>
+
+</body>
+</html>
